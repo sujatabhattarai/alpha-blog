@@ -55,6 +55,16 @@ $navbar-default-bg: #2DA0AC;
   margin-top: -1px;
 }
 
+.article-title{
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.article-body {
+  border-top: 1px solid gainsboro;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
 
 footer {
   margin-top: 45px;
