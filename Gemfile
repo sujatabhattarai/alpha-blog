@@ -36,7 +36,7 @@ gem 'will_paginate','3.1.5'
 gem 'bootstrap-will_paginate','1.0.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem 'rails-controller-testing'
 group :development, :test do
   gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
