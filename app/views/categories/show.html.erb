@@ -1,6 +1,14 @@
 <h1 style = "color:darkslategray; text-align: center; margin-bottom: 20px;">
   <%= "Category: " + @category.name %>
 </h1>
+<% if logged_in? and current_user.admin? %>
+  <div align="center" style="margin-bottom: 15px; margin-top: -9px">
+    <span class="badge" style="background-color: darkseagreen">
+      <%= link_to "Edit Category Name", edit_category_path(@category),
+                  style:"color: green" %>
+    </span>
+  </div>
+<% end %>
 <%= render 'articles/article', obj: @category_articles %>
 <div align="center">
   <%= will_paginate @category_articles %>
